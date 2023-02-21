@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h3>Percentage Calculator</h3>
+    <p>Number of courses:</p>
+    <input type="number" id="course_nums" />
+    <button onclick="genfields()">Submit</button>
+    <br />
+    <br />
+    <form id="course_form">
+      <div id="course_values"></div>
+    </form>
+    <br />
+    <button id="calc-button" onclick="totalpercent()" disabled>
+      Calculate Percentage
+    </button>
+    <p id="result"></p>
+  </body>
+</html>

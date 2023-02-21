@@ -1,0 +1,20 @@
+body {
+  background-color: aqua;
+}
+.nmims1-img {
+  margin-bottom: 10px;
+  margin-top: 100px;
+  padding: 10px 55px 20px;
+  border: solid;
+  background-color: #ff0145;
+  border-width: 10px;
+  margin: 10px;
+}
+.nmims2-img {
+  margin-top: 20px;
+  background-color: #ff0;
+  border-radius: 10px;
+  padding: 10px 50px 20px;
+  border: dashed;
+  border-radius: 10px;
+}

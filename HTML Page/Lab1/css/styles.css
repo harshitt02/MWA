@@ -1,0 +1,32 @@
+body {
+  background-color: #dff6ff;
+}
+
+h1 {
+  color: #00adb5;
+}
+
+h2 {
+  color: #1f4690;
+}
+.messi-img {
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: #1363df;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-left: 100px;
+}
+
+.messi-img img {
+  width: 55%;
+  height: 45%;
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+.messi-img p {
+  text-align: center;
+  color: #bdf2d5;
+}

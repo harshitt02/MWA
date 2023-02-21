@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("#img1").fadeIn();
+          $("#img1").fadeTo("slow", 0.2);
+        });
+        $("#b2").click(function () {
+          $("#img1").fadeOut();
+        });
+        $("#b3").click(function () {
+          $("#img1").fadeToggle();
+        });
+        $("#b4").click(function () {
+          $("body").css("background-color", "red");
+        });
+        $("#fox").animate(
+          {
+            opacity: 0.3,
+            height: "toggle",
+          },
+          5000,
+          function () {
+            // This is the call back function, this is the last parameter, this will be executed immediately after animate()
+            // last argument of callback function is always an error
+            // alert("first image done");
+            $("#dog").animate({
+              opacity: 0.5,
+              height: "40%",
+              width: "20%",
+            },5000,function());
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <button id="b1">Click to fade in</button><br /><br />
+    <img
+      src="dogs.jpg"
+      alt=""
+      id="dog"
+      style="width: 80px; height: 60px; display: none"
+    />
+    <img src="fox2.jpg" alt="" id="fox" />
+    <button id="b2">Click to fade out</button>
+    <button id="b3">Click to toggle</button>
+    <button id="b4">Click to change background color</button>
+  </body>
+</html>
+
+<!-- Fade in, Fade out, Fade toggle, Fade To -->
+<!-- JS is asynchronous in nature -> does not execute the code line by line  -->

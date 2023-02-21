@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function retreive() {
+        var x = document.getElementById("n").value;
+        var a = 0;
+        var b = 1;
+        var c = 0;
+        console.log(a);
+        console.log(b);
+        if (x == 0) {
+          console.log(a);
+        }
+        if (x == 1) {
+          console.log(a);
+          console.log(b);
+        } else {
+          for (var i = 1; i <= x; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+            console.log(c);
+            // document.getElementById();
+            document.getElementById("para").innerHTML += c;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Enter No. <input type="number" name="" id="n" />
+    <input type="submit" name="" onclick="retreive()" />
+    <p id="para">Fibonnacci is:</p>
+    <br />
+    Result <output id="n1"></output>
+  </body>
+</html>

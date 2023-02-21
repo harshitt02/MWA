@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function area(l1, l2, l3) {
+        l1 = parseInt(document.getElementById("n1").value);
+        l2 = parseInt(document.getElementById("n2").value);
+        l3 = parseInt(document.getElementById("n3").value);
+        let s = (l1 + l2 + l3) / 2;
+        console.log(s);
+        let res = Math.sqrt(s * (s - l1) * (s - l2) * (s - l3));
+        console.log(res);
+        document.getElementById("para1").innerHTML = "Area: " + res;
+      }
+
+      function twonumsum(num1, num2) {
+        num1 = parseInt(document.getElementById("num1").value);
+        num2 = parseInt(document.getElementById("num2").value);
+        let res = num1 + num2;
+        if (num1 == num2) {
+          res = 3 * res;
+        }
+        console.log(res);
+        document.getElementById("para2").innerHTML = "Sum is: " + res;
+      }
+
+      function reverseNums(num1, rev, temp) {
+        num1 = parseInt(document.getElementById("numsss1").value);
+        rev = 0;
+        while (num1 > 0) {
+          temp = num1 % 10;
+          rev = rev * 10 + temp;
+          num1 = Math.floor(num1 / 10);
+        }
+        console.log(rev);
+        document.getElementById("bub").innerHTML = "Result: " + rev;
+      }
+
+      function toCamelCase(str) {
+        str = document.getElementById("camel1").value;
+        let camelCase = str.charAt(0).toUpperCase();
+        for (let i = 1; i < str.length; i++) {
+          if (str[i] === " ") {
+            i++;
+            camelCase += " " + str[i].toUpperCase();
+          } else {
+            camelCase += str[i];
+          }
+        }
+        console.log(camelCase);
+        document.getElementById("camelpara").innerHTML =
+          "Camel Case Word: " + camelCase;
+      }
+
+      function GreatestOfFive(num1, num2, num3, num4, num5) {
+        num1 = parseInt(document.getElementById("greatnum1").value);
+        num2 = parseInt(document.getElementById("greatnum2").value);
+        num3 = parseInt(document.getElementById("greatnum3").value);
+        num4 = parseInt(document.getElementById("greatnum4").value);
+        num5 = parseInt(document.getElementById("greatnum5").value);
+
+        numlst = [num1, num2, num3, num4, num5];
+        var max = num1;
+        for (var i = 1; i < numlst.length; i++) {
+          if (numlst[i] > max) {
+            max = numlst[i];
+          }
+        }
+        console.log(max);
+        alert("Max num is: " + max);
+        document.getElementById("greatestpara").innerHTML += max;
+      }
+
+      function patternplay() {
+        let n = 5;
+        let str = "";
+        for (let i = 1; i <= n; i++) {
+          for (let j = 0; j < i; j++) {
+            str += "*";
+          }
+          str += "<br>";
+        }
+        console.log(str);
+        document.getElementById("patterns").innerHTML =
+          "The pattern is: <br>" + str;
+      }
+
+      var gr = "";
+
+      function getgrades() {
+        num1 = parseInt(document.getElementById("mark1").value);
+        num2 = parseInt(document.getElementById("mark2").value);
+        num3 = parseInt(document.getElementById("mark3").value);
+        num4 = parseInt(document.getElementById("mark4").value);
+        num5 = parseInt(document.getElementById("mark5").value);
+
+        name1 = document.getElementById("names1");
+        name2 = document.getElementById("names2");
+        name3 = document.getElementById("names3");
+        name4 = document.getElementById("names4");
+        name5 = document.getElementById("names5");
+
+        document.getElementById("respara").innerHTML += gradecalc(
+          num1,
+          num2,
+          num3,
+          num4,
+          num5
+        );
+      }
+      function gradecalc(num1, num2, num3, num4, num5) {
+        var avg = (num1 + num2 + num3 + num4 + num5) / 5;
+        console.log(avg);
+        if (avg < 60) {
+          gr = "F";
+        } else if (avg < 70) {
+          gr = "D";
+        } else if (avg < 80) {
+          gr = "C";
+        } else if (avg < 90) {
+          gr = "B";
+        } else if (avg < 100) {
+          gr = "A";
+        }
+        return gr;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Area of a triangle</h2>
+    Enter l1: <input type="text" name="" id="n1" /> Enter l2:
+    <input type="text" name="" id="n2" /> Enter l3:
+    <input type="text" name="" id="n3" />
+    <input type="submit" name="" onclick="area()" />
+    <p id="para1">Area is:</p>
+    <br />
+
+    <h2>Sum of two nums:</h2>
+    Enter num1: <input type="text" id="num1" /> Enter num2:
+    <input type="text" name="" id="num2" />
+    <p id="para2">Sum is:</p>
+    <input type="submit" name="" onclick="twonumsum()" />
+    <br />
+
+    <h2>Reverse a number:</h2>
+    Enter num1: <input type="text" name="" id="numsss1" />
+    <input type="submit" onclick="reverseNums()" />
+    <p id="bub">Result is:</p>
+    <br />
+
+    <h2>Camel Case:</h2>
+    Enter a word: <input type="text" name="" id="camel1" />
+    <input type="submit" name="" onclick="toCamelCase()" />
+    <p id="camelpara">Camel Case Word:</p>
+
+    <p>Enter 5 numbers:</p>
+    Enter 1st Number <input type="text" name="" id="greatnum1" /> <br /><br />
+    Enter 2nd Number <input type="text" name="" id="greatnum2" /> <br /><br />
+    Enter 3rd Number <input type="text" name="" id="greatnum3" /> <br /><br />
+    Enter 4th Number <input type="text" name="" id="greatnum4" /> <br /><br />
+    Enter 5th Number <input type="text" name="" id="greatnum5" />
+
+    <input type="submit" onclick="GreatestOfFive()" />
+
+    <p id="greatestpara">Greatest Number is:</p>
+
+    <!-- <input type="submit" onclick="patternplay()" /> -->
+    <button onclick="patternplay()">Show Pattern</button>
+    <p id="patterns">The pattern is:</p>
+
+    <h2>Grades:</h2>
+    <h3>Enter Names and Marks of all students:</h3>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            <input type="text" name="" id="name1" />
+            <input type="number" id="mark1" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="" id="name2" />
+            <input type="number" name="" id="mark2" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="" id="name3" />
+            <input type="number" name="" id="mark3" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="" id="name4" />
+            <input type="number" name="" id="mark4" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="" id="name5" />
+            <input type="number" name="" id="mark5" />
+          </td>
+        </tr>
+      </thead>
+    </table>
+    <input type="submit" id="" onclick="getgrades()" />
+    <p id="respara">Result:</p>
+    <br />
+  </body>
+</html>
+
+<!-- at least two characters lower or uppercase letters, it can have numbers but number should come only at the end -->
+
+<!-- 1. password must be minimum 5 characters and max 15, alphanumeric char allowed,
+must always start with a letter. 
+2. Username - Must only be 5 characters, spaces
+are allowed, no special characters. It can have capital or small letters
+3. Any field - alphanumeric characters of length 5, digits length 2, must always end with a digit, non alphanumeric characters can exist
+Make lookup groups for all these -->

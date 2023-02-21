@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dog-image">
+      <img id="img1" src="dogs.jpg" alt="dog-img" />
+    </div>
+    <h1>Dog D. Dog</h1>
+    <div class="section">
+      <h2>About</h2>
+      <p>Woof woof <br /></p>
+      <p>
+        Hi,I'm Dog. I love
+        <span style="color: blue">User Interface Design</span>
+      </p>
+    </div>
+    <div class="section">
+      <h2>Courses</h2>
+    </div>
+    <table class="t1">
+      <thead>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Title</th>
+          <th>Semester Taken</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="enrollheader" colspan="3">For Credit</td>
+        </tr>
+        <tr class="currentlytaking">
+          <td>
+            <a class = "p1">6.813</a>
+          </td>
+          <td>User Interface Design</td>
+          <td>Spring 2014</td>
+        </tr>
+        <tr>
+          <td>
+            <a class = "p1">6.034</a>
+          </td>
+          <td>Artificial Intelligence</td>
+          <td>Fall 2013</td>
+        </tr>
+        <tr>
+          <td>
+            <a class = "p1">6.006</a>
+          </td>
+          <td>Introduction to Algorithms</td>
+          <td>Fall 2013</td>
+        </tr>
+        <tr>
+          <td class="enrollheader" colspan="3">Listener</td>
+        </tr>
+        <tr>
+          <td>
+            <a class = "p2">6.867</a>
+          </td>
+          <td>Machine Learning</td>
+          <td>Fall 2013</td>
+        </tr>
+        <tr>
+          <td class = "p2">6.830</></td>
+          <td>Database Systems</td>
+          <td>Fall 2012</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="section">
+      <h2>Interests</h2>
+      <p>I am interested <strong>HCI</strong>,meme, and youtube videos</p>
+    </div>
+    <div class="section">
+      <h2>Submit Pet Information</h2>
+      <p>
+        Would love to know what kinds of pets you "own"(you'll never own me).
+        Submit below!
+      </p>
+    </div>
+    <form>
+      <table class = "forms1">
+        <tr>
+          <td>
+            <label for="petname"><strong>Name: &nbsp;</strong></label>
+          </td>
+          <td><input id="petname" type="text" name="petname" /><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phylum"><strong>Phylum</strong>:</label>
+          </td>
+          <td><input id="phylum" type="text" name="phylum" /><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender"><strong>Gender:</strong></label>
+          </td>
+          <td><input id="gender" type="text" name="gender" /><br /></td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

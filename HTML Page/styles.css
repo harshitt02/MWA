@@ -1,0 +1,25 @@
+body {
+  background-color: #ccffe5;
+}
+
+.nat-img {
+  border: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: #99ffcc;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-left: 100px;
+}
+
+.nat-img img {
+  width: 55%;
+  height: 45%;
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+.nat-img h2 {
+  /* text-align: center; */
+  padding-left: 250px;
+}

@@ -1,0 +1,53 @@
+.dog-image {
+  align-items: right;
+}
+#img1 {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 20%;
+  height: 30%;
+}
+
+.t1 {
+  border-collapse: collapse;
+}
+
+.t1 tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+.t1 tr.currentlytaking {
+  color: #337ed2;
+}
+
+.t1 td.enrollheader {
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.t1 th,
+.t1 td {
+  border: 1px solid black;
+}
+.section {
+  font-size: 16px;
+}
+.section h2 {
+  background-color: #b6d2ec;
+  font-family: Georgia;
+  color: #2a75ba;
+  padding: 5px;
+}
+.p1 {
+  color: #094c86;
+  font-weight: bold;
+}
+.p2 {
+  color: #2a75ba;
+  font-weight: bold;
+}
+
+.forms1 {
+  border: 0px;
+}

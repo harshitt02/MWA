@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <table width="5%">
+        <tr>
+          <td>
+            <label for="name">Username: </label>
+          </td>
+          <td>
+            <input type="text" name="email" id="name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="uemail">Email: </label>
+          </td>
+          <td>
+            <input type="email" name="username" id="uemail" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="uage">Age: </label>
+          </td>
+          <td>
+            <input type="text" name="userage" id="uage" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="upassword">Password: </label>
+          </td>
+          <td>
+            <input type="password" id="pass" name="upassword" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender:</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" value="f" name="gender" /> Female</label
+            >
+            <label> <input value="m" type="radio" name="gender" /> Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="udob">Date of Birth: </label></td>
+          <td><input type="date" name="udob" /></td>
+        </tr>
+        <tr>
+          <td><label for="salrange">Range of Salary:</label></td>
+          <td><input type="range" name="salrange" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="uprog">Employee Progress: </label>
+            <br />
+            <progress id="uprog" value="30" max="100"></progress>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="uclour">Colour Picker: </label></td>
+        </tr>
+        <tr>
+          <td><input type="color" name="uclour" id="clours" /></td>
+        </tr>
+        <td>
+          <p>
+            <label>
+              Address :
+              <br />
+              <textarea name="address" cols="15" rows="12"></textarea>
+            </label>
+          </p>
+        </td>
+        <tr>
+          <td>
+            <label for="res">Resume:</label>
+            <input type="file" id="res" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pet-select">Employee Role:</label>
+            <select name="pets" id="pet-select">
+              <option value="">--Please select an option--</option>
+              <option value="Data Scientist">Data Scientist</option>
+              <option value="Project Manager">Project Manager</option>
+              <option value="Junior Software Developer">
+                Junior Software Developer
+              </option>
+              <option value="Senior Software Developer">
+                Senior Software Developer
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" name="" id="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

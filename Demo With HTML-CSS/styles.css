@@ -1,0 +1,23 @@
+.top img {
+  width: 10%;
+  height: 20%;
+  padding-left: 50px;
+}
+
+.top ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  margin-left: 20%;
+  margin-top: -6%;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: red;
+}

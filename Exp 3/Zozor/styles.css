@@ -1,0 +1,167 @@
+body {
+  background-color: beige;
+}
+
+.head h1 {
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.head p {
+  font-size: 17px;
+}
+
+.options {
+  position: absolute;
+  top: 65px;
+  right: 60px;
+  font-size: x-large;
+  padding: 10px 10px 10px 10px;
+}
+
+hr {
+  color: gray;
+  border: 0.8px solid;
+}
+
+#golden-gate {
+  background-repeat: no-repeat;
+  height: 200px;
+  position: relative;
+  margin-top: 15px;
+  width: 1510px;
+}
+
+#golden-gate img {
+  width: 1510px;
+  height: 200px;
+}
+#place-desc {
+  position: absolute;
+  bottom: 0;
+  width: 99.5%;
+  height: 33px;
+  padding-top: 15px;
+  padding-left: 4px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-size: 0.85em;
+}
+
+.red-button {
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(150, 11, 11, 0.938);
+  border: 1px solid #760001;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3px 8px 0px 8px;
+  color: white;
+}
+
+section h1 {
+  font-family: Georgia;
+  font-weight: lighter;
+}
+
+/* .abt {
+  margin-left: 80px;
+  text-align: center;
+} */
+
+/* #right-sect {
+  position: absolute;
+  background-color: rgb(109, 107, 107);
+  color: aliceblue;
+  left: 580px;
+  top: 400px;
+  width: 20%;
+  padding-left: 30px;
+  border-radius: 1em;
+} */
+
+.text {
+  text-align: center;
+}
+
+#zozor-img {
+  text-align: center;
+}
+
+.right-sect {
+  width: 300px;
+  height: fit-content;
+  position: absolute;
+  background-color: rgb(112, 107, 100);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  top: 390px;
+  left: 1190px;
+}
+
+.right-sect-heading {
+  text-align: center;
+  color: white;
+}
+
+.arrow {
+  position: relative;
+  right: 237px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-content: center;
+  gap: 10px;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pic-source {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
+  color: rgb(162, 0, 1);
+}
+
+li::before {
+  content: ">";
+  font-size: 10px;
+  color: rgb(162, 0, 1);
+}
+
+.nav_parent1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 95px;
+}
+
+.d3 h1 {
+  margin-left: 55px;
+}
+
+.para-class p {
+  width: 10%;
+}

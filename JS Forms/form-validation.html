@@ -1,0 +1,138 @@
+<html>
+<head>
+<script type="text/javascript" src="form-validator.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css" />	
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    
+    <br>
+
+	<form id="form" name='registration'>
+	<label for="username">User Name</label>
+    <input type="text" name="username" id="username" placeholder="username" required onkeyup="validuser()"
+     />
+     <span class ="error" id="usererror"> Username is required and should contain only alphabets</span>
+     <br/>
+     <label for="email">Email</label>     
+    <input
+        type="email"
+        name="email"
+        id="uemail" 
+        placeholder="abc@gmail.com"
+        required onkeyup="checkemail()"
+     />
+     <span class ="error" id="emailerror"> Email is required</span>
+     <br/>
+     <label for="password">Password</label>
+    <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password here" 
+        required onkeyup="checkpass()"
+     />
+     <span class ="error" id="passerror"> Password is required</span>
+     <br/>
+     <label for="password">Confirm Password</label>
+    <input
+        type="password"
+        name="confpassword"
+        id="confpassword"
+        placeholder="Confirm Password" required onkeyup = "checkconfpass()"
+     />
+     <span class ="error" id="confpasserror"> Password is required</span>
+     <br/>
+	  <label for="pannum">PAN</label>
+    <input type="text" name="userpan" id="pannum" placeholder="PAN" required onkeyup="validatepan()"
+     />
+     <span class ="error" id="panerror"> PAN is required</span>
+     <br/>
+	  <label for="aadhaarnum">Aadhaar</label>
+    <input type="text" name="useraadhaar" id="aadhaarnum" placeholder="Aadhaar" required onkeyup="validateaadhaar()"
+     />
+     <span class ="error" id="aadhaarerror"> Aadhaar is required</span>
+     <br/>
+    
+    <!-- <h3>Options</h3>
+    <h3>Select your favourite sport</h3>
+    <p>Atleast one option must be selected</p>
+    <div class="checkbox_class">
+
+        <label for="sport-check">Football</label>
+        <input id="sport-check" type="checkbox" value="Agreed" >
+    </div> 
+    <div class="checkbox_class">
+
+        <label for="sport-check">Cricket </label>
+        <input id="sport-check" type="checkbox" value="Agreed" >
+    </div>    
+    <div class="checkbox_class">
+
+        <label for="sport-check">Hockey</label>
+        <input id="sport-check" type="checkbox" value="Agreed" >
+    </div>  
+    <div class="checkbox_class">
+        <label for="sport-check">Basketball</label>
+        <input id="sport-check" type="checkbox" value="Agreed" >
+    </div>   -->
+
+    <li><label for="sport">City:</label></li>
+    <li><select name="sport" id = "sportselect">
+    <option selected="" value="Default">(Please select a location)</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Pune">Pune</option>
+    <option value="Hyderabad">Hyderabad</option>
+    </select></li>
+    <span class ="error" id="locerror"> Select one location</span>
+    <br>
+    <div class="radio">
+        <li><label id="gender">Gender:</label></li>
+        <div class="box">
+            <li><input type="radio" name="gender" value="Male" onchange="handleRadio(this)"><span>Male</span></li>
+        </div>
+        <div class="box">
+            <li><input type="radio" name="gender" value="Female" onchange="handleRadio(this)"><span>Female</span></li>
+        </div>
+        <div class="box">
+            <li><input type="radio" name="gender" value = "Others" onchange="handleRadio(this)"><span>Others</span></li>
+        </div>
+    </div>
+    <span class ="error" id="gendererror"> Select an option</span>
+    <br>
+
+    <fieldset>
+        <legend>Sports interested in </legend>
+        <div class="checker">
+            <input type="checkbox" id="sports" name="interest" value="football" onchange="handleCheck(this)">
+            <label for="sports">Football</label>
+        </div>
+        <div class="checker">
+            <input type="checkbox" id="sports" name="interest" value="cricket" onchange="handleCheck(this)">
+            <label for="sports">Cricket</label>
+        </div>
+        <div class="checker">
+            <input type="checkbox" id="sports" name="interest" value="hockey" onchange="handleCheck(this)">
+            <label for="sports">Hockey</label>
+        </div>
+        <div class="checker">
+            <input type="checkbox" id="sports" name="interest" value="basketball" onchange="handleCheck(this)">
+            <label for="sports">Basketball</label>
+        </div>
+        <span class ="error" id="sportserror"> Select atleast one option</span>
+    </fieldset>
+    
+    <br>
+     
+    <input type="button" onclick="validform()" class="button" value = "Submit"></input>
+     <span class="finalerror" id="button-error" >Enter valid details</span>
+
+    
+	</form>
+    
+</body>
+</html>
+

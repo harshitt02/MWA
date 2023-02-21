@@ -1,0 +1,42 @@
+h1 {
+  margin-left: 20px;
+}
+form li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+form ul li label {
+  width: 100px;
+  text-align: right;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form ul li input,
+select,
+span {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-left: 60px;
+}
+
+/* input:invalid {
+  background-color: red;
+  border: none;
+  outline: 2px solid red;
+} */
+
+.error {
+  color: red;
+}
+
+input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}

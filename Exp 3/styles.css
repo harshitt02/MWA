@@ -1,0 +1,24 @@
+body {
+  background-color: beige;
+  border-left: 5px solid red;
+  border-bottom: 5px solid sandybrown;
+}
+img {
+  width: 40%;
+  height: 30%;
+  border: 10px solid orange;
+}
+.fox-image {
+  margin-bottom: 10px;
+}
+
+.text-box {
+  overflow-y: scroll;
+  background-attachment: scroll;
+  background-color: yellow;
+  padding: 2%;
+  margin-top: 0px;
+  border: 8px dashed orange;
+  width: 550px;
+  height: 200px;
+}

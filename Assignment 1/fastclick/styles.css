@@ -1,0 +1,38 @@
+input {
+  border: none;
+  width: 180px;
+  height: 120px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  font-weight: bold;
+  font-style: italic;
+  box-shadow: inset 2px 2px 3px rgba(79, 79, 79, 0.75);
+}
+p {
+  text-align: center;
+}
+#start {
+  justify-content: top;
+}
+#progress {
+  background-color: rgb(255, 80, 80);
+}
+#finish {
+  background-color: rgb(107, 255, 144);
+}
+#boxes {
+  display: flex;
+}
+#box1 {
+  margin-top: 0;
+  margin-left: 15px;
+}
+#box2 {
+  margin-top: 50px;
+  margin-left: 15px;
+}
+#box3 {
+  margin-top: 100px;
+  margin-left: 15px;
+}

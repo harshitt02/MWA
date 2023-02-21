@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clicker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function clickme() {
+        document.getElementById("second").innerHTML =
+          "<input type='submit' onclick='buttonred()' id='progress' value='.....'>";
+        document.getElementById(
+          "second"
+        ).innerHTML += `<p>"in progress" once the <br> button is pressed</p>`;
+      }
+      function buttonred() {
+        document.getElementById(
+          "third"
+        ).innerHTML = `<p>Click as quickly as <br>possible once it turns<br>green!</p>`;
+        document.getElementById("third").innerHTML +=
+          "<input type='submit'  id='finish' value='PRESS NOW!'>";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="boxes">
+      <div id="box1">
+        <input
+          type="submit"
+          onclick="clickme()"
+          name="start"
+          id="first"
+          value="Start"
+        />
+        <p>Starting State</p>
+      </div>
+      <div id="box2"><p id="second"></p></div>
+      <div id="box3"><p id="third"></p></div>
+    </div>
+  </body>
+</html>
